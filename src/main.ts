@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 import { 
   ElButton, 
   ElDialog,
@@ -23,6 +24,7 @@ import {
   ElCollapseTransition
 } from 'element-plus';
 const app = createApp(App)
+app.use(router)
 app.config.globalProperties.$message = ElMessage
 app.config.globalProperties.$loading = ElLoading.service
 app.component(ElButton.name, ElButton);
