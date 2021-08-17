@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode.cn id=111 lang=javascript
+ * @lc app=leetcode.cn id=104 lang=javascript
  *
- * [111] 二叉树的最小深度
+ * [104] 二叉树的最大深度
  */
 
 // @lc code=start
@@ -17,17 +17,7 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var minDepth = function (root) {
-  if (!root) {
-    return 0;
-  }
-  if (!root.left) {
-    return 1 + minDepth(root.right);
-  }
-  if (!root.right) {
-    return 1 + minDepth(root.left);
-  }
-  return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
+var maxDepth = function (root) {
+  return !root ? 0 : Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
 };
-
 // @lc code=end
