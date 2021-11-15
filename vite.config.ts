@@ -22,7 +22,6 @@ export default defineConfig({
       ],
     }),
   ],
-
   /**
    * 在生产中服务时的基本公共路径。
    * @default '/'
