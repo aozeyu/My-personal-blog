@@ -54,4 +54,5 @@ npm run build
 - vuex: ^4.0.0
 - axios: ^0.21.1
 - highlight.js: ^10.7.2
-- marked：^2.0.3
+- marked：^2.0.322
+-分支合并
